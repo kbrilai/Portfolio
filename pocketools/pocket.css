@@ -1,0 +1,11 @@
+
+body{box-sizing: border-box;
+margin:20vh;}
+
+
+.bannerunderlay{
+    height:50vh;
+    width:80vw;
+    background-image:repeating-linear-gradient(45deg,yellow,black)/* .banner{color:black;
+    height:50vh;
+    width:80vw; */
