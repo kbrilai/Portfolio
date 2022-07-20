@@ -4,8 +4,25 @@ margin:20vh;}
 
 
 .bannerunderlay{
+    display:flex;
     height:50vh;
     width:80vw;
-    background-image:repeating-linear-gradient(45deg,yellow,black)/* .banner{color:black;
-    height:50vh;
-    width:80vw; */
+    align-items: center;
+    justify-content: center;
+    background-image:repeating-linear-gradient(45deg,yellow 3vw ,black 4vw);
+  
+}
+.banner{ height:45vh;
+    width:77vw;
+background-color: rgb(93, 81, 81);
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+
+
+}
+
+.return{height:80px;
+    text-align: center;
+}
