@@ -1,29 +1,60 @@
 body{
     box-sizing: border-box;
-    background-color: black;color:white;
+    background-color: black;
+    color:white;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 40vh;
+    height: 50vh;
     width: auto;
     margin-top:30vh;
     border-style:solid;
 border-width: 3px;
 border-color: white;
-     
 }
-
 
 .content_box{
     display:flex;
-    height: 20vh;
-    width:20vw;
+    height: 40vh;
+    width:40vh;
     border-style:solid;
     border-width: 3px;
     border-color: white;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-left:40vh;
 }
 
 .DJ_deck{border-style: solid;
-height:4vh,
-width:4vh}
+height:30vh;
+width:30vh;} 
+
+.touchpadkeys{border-style:solid;
+    border-width: 3px;
+    border-color: white;
+    height: 4vh;
+    width:4vh;
+    }
+
+    .description{
+        height: 35vh;
+        width:50vw;
+        display: flex;
+        flex-direction: column;
+    border-style: solid;
+border-width: 3px;
+margin-left:4vh;
+font-size: 130%;}
+
+
+
+.bottom_description{display:flex;
+}
+
+    .features{
+    height: 15vh;
+width:25vw;}
+
+
+    .skills{ height: 15vh;
+    width:25vw;}
