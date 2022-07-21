@@ -1,0 +1,29 @@
+body{
+    box-sizing: border-box;
+    background-color: black;color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: auto;
+    margin-top:30vh;
+    border-style:solid;
+border-width: 3px;
+border-color: white;
+     
+}
+
+
+.content_box{
+    display:flex;
+    height: 20vh;
+    width:20vw;
+    border-style:solid;
+    border-width: 3px;
+    border-color: white;
+    justify-content: space-between;
+}
+
+.DJ_deck{border-style: solid;
+height:4vh,
+width:4vh}
