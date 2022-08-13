@@ -1,4 +1,26 @@
-.fuckaround{height:50px;width:auto;
-border: 3px;
-border-style: solid;
-border-color: red;}
+/* base theme setup */
+
+
+
+
+/* base setup */
+.banner_top{
+    display:flex;
+
+    border-style: solid;
+    border-color: black;
+
+    width: auto;
+    height: 5vh;
+    background-color: black;
+}
+.search_bar{background-color: white;
+height:3vh}
+.nav_bar{height:3vh;background-color: red;}
+.reach_me_page{background-color: aqua;
+height:3vh;}
+
+.hamburger_menu{height: 3vh;background-color:orange;}
+
+
+/* css interactions setup */
