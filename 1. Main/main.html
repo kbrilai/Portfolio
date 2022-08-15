@@ -11,33 +11,71 @@
   <body>
     <header>
       <div class="banner_top">
-        <!-- Logo, search bar,nav bar horizontal,reach me, hamburger -->
+        <!-- Top Banner: Logo, search bar,nav bar horizontal,reach me, hamburger -->
         <div class="homeLogo">
           <!-- homelogo -->
-          <button type="button">Home</button>
+          <a class="navlinks" href="/1. Main/main.html"
+            ><img src="/1. Main/images/My Stupid face.jpg" alt="my face Logo"
+          /></a>
         </div>
-        <div class="search_bar">hello world</div>
+        <div class="search_bar">I am a a search bar</div>
         <div class="nav_bar">navbar</div>
         <div class="reach_me_page"><button type="button">reach me</button></div>
         <div class="hamburger_menu">Hamburger menu</div>
       </div>
-
+      <!-- banner 2nd strip: scrollable navigation bar  -->
       <div class="banner bottom">
-        banner bottom
-
-        <div class="banner overlay">banner overlay</div>
+        <ul>
+          <li>About me</li>
+          <li>Projects</li>
+          <li>Gallery</li>
+          <li>Hobbies</li>
+          <li>Contact Me</li>
+        </ul>
+        <!-- banner 3: display canvas -->
+        <div class="banner_canvas">
+          banner canvas
+          <h1>hello world</h1>
+          <p>search bar</p>
+          <!-- the canvas will be a background image stretched -->
+        </div>
       </div>
-      <!-- Underlay banner, photo image, logo. Overlay banner with interactive buttons -->
     </header>
 
     <main>
-      <!-- my work in a span layout flexbox1 flexbox2 flexbox3 -->
+      <!-- Work display canvas -->
+      <div class="canvas">
+        <!-- my work in a span layout flexbox1 flexbox2 flexbox3 -->
+
+        <!-- image (scrollable vertical banner)on right,
+           text on left image(scrollable vertical banner) on left, text on right -->
+      </div>
 
       <button type="button" onclick="run()">click me</button>
     </main>
 
     <footer>
-      <!-- basic shit, contact info, reach me, socials, icons -->
+      <!-- Bottom banner: basic shit, contact info, reach me, socials, icons -->
+      <div class="footer_banner">
+        <div class="text">
+          <h1>text how to contact me</h1>
+          <button>find out more</button>
+        </div>
+        <div class="social_media_icons">
+          <button>facebook</button>
+          <button>facebook</button>
+          <button>facebook</button>
+          <button>facebook</button>
+          <button>facebook</button>
+        </div>
+        <div class="page_end_links">
+          <div>products</div>
+          <div>Customers</div>
+          <div>Company</div>
+          <div>Community</div>
+          <div>Follow</div>
+        </div>
+      </div>
     </footer>
 
     <script src="./main.js"></script>

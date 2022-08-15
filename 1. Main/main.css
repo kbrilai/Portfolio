@@ -1,18 +1,29 @@
 /* base theme setup */
+*{background-color:white;
+color: grey;
+box-sizing: border-box;
+border: 2px;
+border-color: black;}
 
 
+img{height: 8vh;
+    padding: 0.5vh;
+}
 
 
 /* base setup */
 .banner_top{
-    display:flex;
-
+    display:inline-grid;
+    
+    column-gap: 0.5vw;
+    justify-content:flex-start;
+    height: 9vh;
     border-style: solid;
     border-color: black;
 
     width: auto;
-    height: 5vh;
-    background-color: black;
+
+
 }
 .search_bar{background-color: white;
 height:3vh}
