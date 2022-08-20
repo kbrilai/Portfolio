@@ -3,33 +3,52 @@
 color: grey;
 box-sizing: border-box;
 border: 2px;
-border-color: black;}
+/* border-color: grey; */
+border-style: dotted;
 
-
-
+}
 
 /* banner setup */
 .banner_top{
-    display:flex;
-   
-    border-style: solid;
-    border-color: black;
-    width: auto;
+    display:grid;
+    height:4em;
 }
-.search_bar{background-color: white;
-height:3vh;
-width:50vw;}
+
+.search_bar{background-color:rgb(207, 206, 206);
+    color:grey;
+height:25px;
+border-radius: 10px;
+margin: 0.5vh 0vh 0.5vh 0vh;
+padding: 0vh 1vh 1vh 2vh;
+/* margin:5px 0px 0px 10px;
+padding:0px 10px 10px 20px; */
+width:30vw;
+}
+
 .nav_bar{height:3vh;
     width:10vw;
-    background-color: red;}
-.reach_me_page{background-color: aqua;
+    background-color:white;
+    color:grey;
+    height:25px;
+    margin: 0.5vh 0vh 0.5vh 0vh;
+    padding:0px 10px 10px 20px;;
+}
+.reach_me_btn{
+    position:absolute;
     width:10vw;
-    height:3vh;}
+    background-color:white;
+    color:grey;
+    border-style: solid;
+    border-color: rgb(179, 177, 177);
+    border-radius: 2px;
+    height:25px;
+    margin: 0.5vh 0vh 0.5vh 30vh;
+    padding:0px 10px 10px 20px;}
 
 
     
-img{height: 8vh;
-    padding: 0.5vh;
+.homelogo,img{height: 2.5em;
+    border:1em;
 }
 
 /* 
