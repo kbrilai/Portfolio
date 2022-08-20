@@ -3,9 +3,12 @@
 color: grey;
 box-sizing: border-box;
 border: 2px;
-/* border-color: grey; */
-border-style: dotted;
+border-color: grey;
+/* border-style: dotted; */
 }
+
+
+
 
 
 /* template */
@@ -13,86 +16,127 @@ ul{list-style: none;
     display: flex;
     flex-direction: row;
 }
-
-
-
-li{width:100px}
-
-/* banner setup */
-.banner_top{
-    display:grid;
-                          /* home  search nav reach hamburger */
-    grid-template-columns: 50px 30vw 500px 50px 50px;
- grid-template-rows:50px;
- column-gap: 10px;
-    height:4em;
-}
-    
-.homelogo,img{height: 2.5em;
-    border:1em;
-}
-.search_bar{
-    background-color:rgb(207, 206, 206);
-    color:grey;
-    height:25px;
-    width:30vw;
-    border-radius: 10px;
-    margin: 0.5vh 0vh 0.5vh 0vh;
-    padding: 0vh 1vh 1vh 2vh;
-
-
+li{width:100px;
 }
 
-.nav_bar{
+form{
     display: flex;
-    flex-direction: row;
-    background-color:white;
-    color:grey;
-    height:25px;
-    width: 200px;
-    margin: 0.5vh 0vh 0.5vh 180px;
-    padding:0px 10px 10px 20px;
-}
+ 
+    background-color: rgb(207, 206, 206);}
+button{
+    padding:0.5vh;
+    background-color: rgb(207, 206, 206);}
 
-.reach_me_btn{
-    background-color:white;
-    color:grey;
-    border-style: solid;
-    border-color: rgb(179, 177, 177);
-    border-radius: 2px;
-    height:25px;
-    width:100px;
-    justify-content: center;
-    align-items: center;
-    margin: 1vh 0vh 0.5vh 250px;
-    padding:0px 10px 10px 20px;}
+/* Top banner setup */
+    /* Banner base */
+    .banner_top{
+        display:grid;
+        grid-template-columns: 50px 25vw 500px 50px 50px;
+        grid-template-rows:50px;
+        column-gap: 10px;
+        height:4em;
+        padding:1vh;
+    }
+
+        /* top left logo */
+        .homelogo,img{height: 3.5em;
+
+        }
+
+        /* search bar */
+        .search_bar{
+            background-color:rgb(207, 206, 206);
+            color:grey;
+            height:30px;
+            width:30vw;
+            border-radius: 10px;
+            margin: 0.5vh 0vh 0.5vh 0vh;
+            padding: 0vh 1vh 1vh 2vh;
+       
+        }
+
+        /* nav bar */
+        .nav_bar{
+            display: flex;
+            flex-direction: row;
+            background-color:white;
+            color:grey;
+            height:25px;
+            width: 200px;
+            margin: 0.5vh 0vh 0.5vh 180px;
+            padding:0px 10px 10px 20px;
+        }
+        
+        /* reach me */
+        .reach_me_btn{
+            background-color:white;
+            color:grey;
+            border-style: solid;
+            border-color: rgb(179, 177, 177);
+            border-radius: 2px;
+            height:25px;
+            width:100px;
+            justify-content: center;
+            align-items: center;
+            margin: 1vh 0vh 0.5vh 250px;
+            padding:0px 10px 10px 20px;}
+
+        /*.Hamburger_menu */
+            /* burger base */
+            .hamburger_menu{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                border: 4px;
+                border-color: black;
+                border-style: solid;
+                height:50px;
+                width:50px;
+                margin-left: 700px;
+                background-color:orange;}
+            /* burger slices*/
+                .mdl_slice{
+                    height:7px;
+                    width:35px;
+                    background-color: black;
+                   
+                    border-radius: 10px;
+                }
+                .mdl_slice::before{
+                    content:'';
+                    position:absolute;
+                    height:7px;
+                    width:35px;
+                    background-color: black;
+                    border-radius: 10px;
+                    transform:translate(0px, -10px);
+                }
+                .mdl_slice::after{
+                    content:'';
+                    position:absolute;
+                    height:7px;
+                    width:35px;
+                    background-color: black;                   
+                    border-radius: 10px;
+                    transform:translate(0px, 10px);
+                }
+                .mdl_slice::before ::after{
+                    height:7px;
+                    width:35px;
+                    background-color: black;
+                   
+                    border-radius: 10px;
+                }
+               
+                
 
 
+        /* .hamburger_slice::Before{background-color: black;
+            position:absolute;
+            height:1vh;
+            width:4vh;
+            border-radius: 30%;
+            transform:translate(0px,100px);} */
+            
 
-
-
-.Hamburger_menu */
- .hamburger_menu{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border: 4px;
-    border-color: black;
-    border-style: solid;
-    height: 5vh;
-    width:5vh;
-    background-color:orange;}
-.hamburger_slice{background-color: black;
-height:1vh;
-width:4vh;
-border-radius: 30%;}
-
-/* .hamburger_slice::Before{background-color: black;
-    position:absolute;
-    height:1vh;
-    width:4vh;
-    border-radius: 30%;
-    transform:translate(0px,100px);} */
-    
-
-/* css interactions setup */
+        /* css interactions setup */
