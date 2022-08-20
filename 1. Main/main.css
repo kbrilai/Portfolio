@@ -14,15 +14,23 @@ ul{list-style: none;
     flex-direction: row;
 }
 
+
+
+li{width:100px}
+
 /* banner setup */
 .banner_top{
     display:grid;
-    grid-template-columns: 50px 30vw 80px 80px 50px;
+                          /* home  search nav reach hamburger */
+    grid-template-columns: 50px 30vw 500px 50px 50px;
  grid-template-rows:50px;
  column-gap: 10px;
     height:4em;
 }
-
+    
+.homelogo,img{height: 2.5em;
+    border:1em;
+}
 .search_bar{
     background-color:rgb(207, 206, 206);
     color:grey;
@@ -31,9 +39,7 @@ ul{list-style: none;
     border-radius: 10px;
     margin: 0.5vh 0vh 0.5vh 0vh;
     padding: 0vh 1vh 1vh 2vh;
-    
-/* margin:5px 0px 0px 10px;
-padding:0px 10px 10px 20px; */
+
 
 }
 
@@ -43,26 +49,26 @@ padding:0px 10px 10px 20px; */
     background-color:white;
     color:grey;
     height:25px;
-    margin: 0.5vh 0vh 0.5vh 0vh;
-    padding:0px 10px 10px 20px;;
+    width: 200px;
+    margin: 0.5vh 0vh 0.5vh 180px;
+    padding:0px 10px 10px 20px;
 }
 
 .reach_me_btn{
-    width:5vw;
     background-color:white;
     color:grey;
     border-style: solid;
     border-color: rgb(179, 177, 177);
     border-radius: 2px;
     height:25px;
-    margin: 0.5vh 0vh 0.5vh 30vh;
+    width:100px;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 0vh 0.5vh 250px;
     padding:0px 10px 10px 20px;}
 
 
-    
-.homelogo,img{height: 2.5em;
-    border:1em;
-}
+
 
 
 .Hamburger_menu */
