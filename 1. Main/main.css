@@ -1,4 +1,4 @@
-/* base theme setup */
+/* base setup */
 *{background-color:white;
 color: grey;
 box-sizing: border-box;
@@ -6,32 +6,54 @@ border: 2px;
 border-color: black;}
 
 
+
+
+/* banner setup */
+.banner_top{
+    display:flex;
+   
+    border-style: solid;
+    border-color: black;
+    width: auto;
+}
+.search_bar{background-color: white;
+height:3vh;
+width:50vw;}
+.nav_bar{height:3vh;
+    width:10vw;
+    background-color: red;}
+.reach_me_page{background-color: aqua;
+    width:10vw;
+    height:3vh;}
+
+
+    
 img{height: 8vh;
     padding: 0.5vh;
 }
 
-
-/* base setup */
-.banner_top{
-    display:inline-grid;
-    
-    column-gap: 0.5vw;
-    justify-content:flex-start;
-    height: 9vh;
-    border-style: solid;
+/* 
+Hamburger menu */
+/* .hamburger_menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px;
     border-color: black;
+    height: 5vh;
+    width:5vh;
+    background-color:orange;}
+.hamburger_slice{background-color: black;
+height:1vh;
+width:4vh;
+border-radius: 30%;} */
 
-    width: auto;
-
-
-}
-.search_bar{background-color: white;
-height:3vh}
-.nav_bar{height:3vh;background-color: red;}
-.reach_me_page{background-color: aqua;
-height:3vh;}
-
-.hamburger_menu{height: 3vh;background-color:orange;}
-
+/* .hamburger_slice::Before{background-color: black;
+    position:absolute;
+    height:1vh;
+    width:4vh;
+    border-radius: 30%;
+    transform:translate(0px,100px);} */
+    
 
 /* css interactions setup */
