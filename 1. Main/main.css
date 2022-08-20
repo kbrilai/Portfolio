@@ -5,37 +5,50 @@ box-sizing: border-box;
 border: 2px;
 /* border-color: grey; */
 border-style: dotted;
+}
 
+
+/* template */
+ul{list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
 /* banner setup */
 .banner_top{
     display:grid;
+    grid-template-columns: 50px 30vw 80px 80px 50px;
+ grid-template-rows:50px;
+ column-gap: 10px;
     height:4em;
 }
 
-.search_bar{background-color:rgb(207, 206, 206);
+.search_bar{
+    background-color:rgb(207, 206, 206);
     color:grey;
-height:25px;
-border-radius: 10px;
-margin: 0.5vh 0vh 0.5vh 0vh;
-padding: 0vh 1vh 1vh 2vh;
+    height:25px;
+    width:30vw;
+    border-radius: 10px;
+    margin: 0.5vh 0vh 0.5vh 0vh;
+    padding: 0vh 1vh 1vh 2vh;
+    
 /* margin:5px 0px 0px 10px;
 padding:0px 10px 10px 20px; */
-width:30vw;
+
 }
 
-.nav_bar{height:3vh;
-    width:10vw;
+.nav_bar{
+    display: flex;
+    flex-direction: row;
     background-color:white;
     color:grey;
     height:25px;
     margin: 0.5vh 0vh 0.5vh 0vh;
     padding:0px 10px 10px 20px;;
 }
+
 .reach_me_btn{
-    position:absolute;
-    width:10vw;
+    width:5vw;
     background-color:white;
     color:grey;
     border-style: solid;
@@ -51,21 +64,22 @@ width:30vw;
     border:1em;
 }
 
-/* 
-Hamburger menu */
-/* .hamburger_menu{
+
+.Hamburger_menu */
+ .hamburger_menu{
     display:flex;
     justify-content: center;
     align-items: center;
     border: 4px;
     border-color: black;
+    border-style: solid;
     height: 5vh;
     width:5vh;
     background-color:orange;}
 .hamburger_slice{background-color: black;
 height:1vh;
 width:4vh;
-border-radius: 30%;} */
+border-radius: 30%;}
 
 /* .hamburger_slice::Before{background-color: black;
     position:absolute;
