@@ -45,6 +45,8 @@ button{
 
         /* search bar */
         .search_bar{
+            display: flex;
+            align-items: center;
             background-color:rgb(207, 206, 206);
             color:grey;
             height:30px;
@@ -52,8 +54,8 @@ button{
             border-radius: 10px;
             margin: 0.5vh 0vh 0.5vh 0vh;
             padding: 0vh 1vh 1vh 2vh;
-       
         }
+        
 
         /* nav bar */
         .nav_bar{
@@ -128,15 +130,42 @@ button{
                     border-radius: 10px;
                 }
                
-                
+                /* hamburger popup */
 
 
-        /* .hamburger_slice::Before{background-color: black;
-            position:absolute;
-            height:1vh;
-            width:4vh;
-            border-radius: 30%;
-            transform:translate(0px,100px);} */
+     
             
 
-        /* css interactions setup */
+
+
+
+                /* Scroll Nav */
+                .scroll_nav{
+                    display:flex;
+                    width: 100vw;
+                    flex-direction: row;
+                justify-content: center;
+            overflow-x: scroll;
+                }
+                
+ 
+                .banner_canvas{
+                    height:100vh;
+                    width:100vw;
+                    background-repeat:no-repeat;
+                    background-size: 100%;
+                    display:flex;
+                    flex-direction: column;
+                    background-image:url(./images/Banner.jpg);
+                    justify-content: center;
+                    align-items: center;
+                    color: white;    
+                }
+                .welcome_message{background-color:transparent;
+                    color: white;
+                }
+                .welcome_speil{background-color: transparent;
+                    color: white;
+                }
+            
+                    /* css interactions setup */
