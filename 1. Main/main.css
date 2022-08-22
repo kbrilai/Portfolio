@@ -13,6 +13,8 @@ border-color: grey;
 
 /* template */
 li{width:100px;
+    color:red;
+
 }
 
 form{
@@ -63,10 +65,16 @@ button{
             width: 200px;
             margin: 0.5vh 0vh 0.5vh 180px;
             padding:0px 10px 10px 20px;
+            
         }
-        .navlist1{list-style: none;
+        .navlist1{
+            list-style: none;
             display: flex;
-            flex-direction: row;}
+            flex-direction: row;
+          
+            
+
+        }
        
         
         /* reach me */
@@ -153,12 +161,23 @@ button{
                         justify-content: center;
                         font-size: 35px;
                         background-color: transparent;
-                    }
-                        .navlist3, li{
+                        }
+                        .navlist3 li{
+                            display: flex;
                             width:40vw;
-                            padding:30px;
+                            padding:20px;
                             background-color: transparent;
-                            color: white;}
+                            color: white;
+                        align-items:center;
+                        }
+                        a:hover { display: flex;
+                     
+                        
+                        background-color: transparent;
+                        color: white;
+                        align-items:center;
+                        size:50px;
+                        }
 
 
             
