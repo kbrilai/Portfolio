@@ -12,10 +12,6 @@ border-color: grey;
 
 
 /* template */
-ul{list-style: none;
-    display: flex;
-    flex-direction: row;
-}
 li{width:100px;
 }
 
@@ -68,6 +64,10 @@ button{
             margin: 0.5vh 0vh 0.5vh 180px;
             padding:0px 10px 10px 20px;
         }
+        .navlist1{list-style: none;
+            display: flex;
+            flex-direction: row;}
+       
         
         /* reach me */
         .reach_me_btn{
@@ -94,7 +94,7 @@ button{
                 border-style: solid;
                 height:50px;
                 width:50px;
-                margin-left: 700px;
+                margin-left: 36vw;
                 background-color:orange;}
             /* burger slices*/
                 .mdl_slice{
@@ -130,13 +130,38 @@ button{
                     border-radius: 10px;
                 }
                
-                /* hamburger popup */
+                /* hamburger popup nav */
+                .pop_up_nav{
+                    height:100vh;
+                    width:100vw;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    list-style: none; 
+                    border-style: solid;
+                    border-width: 2px;
+                    border-color: black;background-repeat:no-repeat;
+                    background-size: 100%;
+                    background-image: url(./images/Banner.jpg);
+                }
+                    
+                    .navlist3{
+                        display: flex;
+                        list-style: none;
+                        flex-direction: column;
+                        text-align: center;
+                        justify-content: center;
+                        font-size: 35px;
+                        background-color: transparent;
+                    }
+                        .navlist3, li{
+                            width:40vw;
+                            padding:30px;
+                            background-color: transparent;
+                            color: white;}
 
 
-     
             
-
-
 
 
                 /* Scroll Nav */
@@ -145,7 +170,6 @@ button{
                     width: 100vw;
                     flex-direction: row;
                 justify-content: center;
-            overflow-x: scroll;
                 }
                 
  
@@ -167,5 +191,15 @@ button{
                 .welcome_speil{background-color: transparent;
                     color: white;
                 }
-            
+
+                .find_out_more{ background-color: transparent;
+                    border-color: white;
+                    border-width:2px;
+                    border-style:solid ;
+                }
+                .find_out_more:hover{background-color:white;
+                    border-color: white;
+                    border-width:2px;
+                    border-style:solid;
+                transition:0.3s ease-in}
                     /* css interactions setup */
