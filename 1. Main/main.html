@@ -43,38 +43,20 @@
         </div>
        
 
-       
-    
       
         <!-- hamburger menu -->
-  
-
         <div class="hamburger_menu">
-          
           <div class="mdl_slice">
           </div>
-          
-    
         </div>
+
         <button class= "menuBtn" type="button" onclick="run()">
         </button>
-      </div>
-    </div>
-  <div class="scroll_nav">
-    <ul class="navlist3">
-      <li class="navitems"> <a href="#">Highlights</a>  </li>
-      <li class="navitems"> <a href="#">About Me</a>  </li>
-      <li class="navitems"> <a href="#">Projects/a>  </li>
-      <li class="navitems"> <a href="#">Gallery</a>  </li>
-      <li class="navitems"> <a href="#">Hobbies</a>  </li>
-      <li class="navitems"> <a href="#">Contact Me</a>  </li>
 
-      <li>About me</li>
-      <li>Projects</li>
-      <li>Gallery</li>
-      <li>Hobbies</li>
-      <li>Contact Me</li>
-    </ul></div>
+      </div>
+  
+    <!-- banner 2nd strip: recent highlights & scrollable navigation bar  -->
+  
       <!-- hamburger pop up nav -->
       <div class="pop_up_nav"> 
           <ul class="navlist2">
@@ -83,19 +65,30 @@
         <li>Gallery</li>
         <li>Hobbies</li>
         <li>Contact Me</li>
-        
+        </ul>
       </div>
-
+    </div>
       
 
 
 
-      <!-- banner 2nd strip: recent highlights & scrollable navigation bar  -->
+      
       
       <!-- highlights button scroll nav bar  -->    
-      </div>
-     
 
+      
+    <div class="scroll_nav">
+      <button class="leftScroll"><b>&LT;</b></button>
+      <ul class ="navList3">
+        <li class="navitems"> <a href="#">Highlights</a>  </li>
+        <li class="navitems"> <a href="../aboutMe/aboutMe.html">About Me</a>  </li>
+        <li class="navitems"> <a href="#">Projects</a>  </li>
+        <li class="navitems"> <a href="#">Gallery</a>  </li>
+        <li class="navitems"> <a href="#">Hobbies</a>  </li>
+        <li class="navitems"> <a href="#">Contact Me</a>  </li>
+      </ul>
+      <button class="rightScroll"><b>&GT;</b></button>
+    </div>
 
         
         
@@ -113,15 +106,26 @@
 
     <main>
       <!-- Work display canvas -->
-      <div class="canvas">
-        <!-- my work in a span layout flexbox1 flexbox2 flexbox3 -->
-
+      <div class="canvas1">
+          <!-- my work in a span layout flexbox1 flexbox2 flexbox3 -->
+        <div class="canvas1Text"></div>
+        <div class="canvas1 image grid"></div>
+      </div>  
+      <div class="canvas2">
+        <div class="canvas2Img">verticle work scroll banner</div>
+        <div class="canvas2Text">fixed position text with banner scrolling</div>
         <!-- image (scrollable vertical banner)on right,
            text on left image(scrollable vertical banner) on left, text on right -->
       </div>
 
+
+      
+        
+      
+
       <button type="button" onclick="run()">this is another button i wanna try out for fun
         click me</button>
+        <script src="./main.js"></script>
     </main>
 
     <footer>
