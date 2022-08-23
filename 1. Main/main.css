@@ -324,4 +324,18 @@ button{
                 height:50vh;
             background-color: aqua;}
 
+
+
+            .contactCanvas{display:flex;
+            height: 30vh;
+        justify-content: center;}
+
+
+            .socialMediaIcons{display:flex;
+            height:30px;
+        position:fixed;}
+            .siteMap{display:flex;}
+
+
+
                     /* css interactions setup */
