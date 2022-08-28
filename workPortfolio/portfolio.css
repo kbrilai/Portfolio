@@ -1,0 +1,15 @@
+.roadmap {
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.banner {
+    height: 30vh;
+    background-color: grey;
+    width: 100vw;
+
+
+}

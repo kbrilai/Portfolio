@@ -1,215 +1,224 @@
 /* base setup */
-*{
-color: grey;
-box-sizing: border-box;
-border: 0px;
-margin:0px;
+* {
+    color: grey;
+    box-sizing: border-box;
+    border: 0px;
+    margin: 0px;
 
 }
 
 
-
-
-/* template */
-
-
-
-
-form{
+form {
     display: flex;
 
 }
-button{
-    padding:0.5vh;
+
+button {
+    padding: 0.5vh;
     background-color: transparent;
-    color:white;
+    color: white;
     border: 2px;
-    border-style:solid;
+    border-style: solid;
 
-   
 
-   }
-   button:hover{
-    padding:0.5vh; border-radius: 5px;    
-    background-color:rgb(160, 154, 154);
+
+}
+
+button:hover {
+    padding: 0.5vh;
+    border-radius: 5px;
+    background-color: rgb(160, 154, 154);
     transition: 0.5s ease-in-out;
-   }
+}
 
 /* Top banner setup */
-    /* Banner base */
-    .banner_top{
-        
-        display:grid;
-        position:fixed;
-        grid-template-columns: 50px 25vw 500px 50px 50px;
-        grid-template-rows:50px;
-        column-gap: 10px;
-        height:5em;
-        width:100vw;
-        padding:5px 30px 5px 10px;
-       background-color: grey;
-        z-index:1;
-      
-    }
+/* Banner base */
+.banner_top {
 
-        /* top left logo */
-        .navlink,img{
-            height: 3.5em;
-            background-color: transparent;
-        }
+    display: grid;
+    position: fixed;
+    grid-template-columns: 50px 25vw 500px 50px 50px;
+    grid-template-rows: 50px;
+    column-gap: 10px;
+    height: 5em;
+    width: 100vw;
+    padding: 5px 30px 5px 10px;
+    background-color: grey;
+    z-index: 1;
 
-        /* search bar */
-        .search_bar{
-            display: flex;
-            align-items: center;
-            background-color:rgb(207, 206, 206);
-            color:grey;
-            height:30px;
-            width:35vw;
-            border-radius: 10px;
-            margin: 1.5vh 0vh 0.5vh 0vh;
-            padding: 1.5vh 1vh 1vh 2vh;
-        }
-        
+}
 
-        /* nav bar */
-        .nav_bar{
-            display: flex;
-            flex-direction: row;
-            justify-content: right;
-            height:50px;
-            width: 800px;
-            color:grey;
-            margin:2% 10% 10% 80% ;
-            padding:0%,20% 0% 0%;       
-        }
-        
-        .navlist1{
-            display:flex;
-            list-style: none;
-            flex-direction: row;
-            background-color:transparent;
-            align-items: center;
-        }
-        .navitems, a{ 
-            width:100px;
-            color:white;
-        }
+/* top left logo */
+.navlink,
+img {
+    height: 3.5em;
+    background-color: transparent;
+}
+
+/* search bar */
+.search_bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(207, 206, 206);
+    color: grey;
+    height: 30px;
+    width: 35vw;
+    border-radius: 10px;
+    margin: 1.5vh 0vh 0.5vh 0vh;
+    padding: 1.5vh 1vh 1vh 2vh;
+}
 
 
-       
-       
-        
-        /*.Hamburger_menu */
-           
-        
+/* nav bar */
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: 50px;
+    width: 800px;
+    color: grey;
+    margin: 2% 10% 10% 80%;
+    padding: 0%, 20% 0% 0%;
+}
 
-        /* burger base */
-        .hamburger_menu{
-            position: fixed;
-            height:50px;
-            width:50px;
-            /* border-color: black;
+.navlist1 {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    background-color: transparent;
+    align-items: center;
+}
+
+.navitems,
+a {
+    width: 100px;
+    color: white;
+}
+
+
+
+
+
+/*.Hamburger_menu */
+
+
+
+/* burger base */
+.hamburger_menu {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    /* border-color: black;
             border-style: solid;
             border-width:2px; */
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
 
-            margin-top:1vh;
-        margin-left:95%;
-        margin-right:2%;
-        }
+    margin-top: 1vh;
+    margin-left: 95%;
+    margin-right: 2%;
+}
 
-        /* burger slices*/
-            .mdl_slice{
-                height:5px;
-                width:35px;
-                background-color: white;
-                border-radius: 10px;
-            }
-            .mdl_slice::before,
-            .mdl_slice::after{
-                content:'';
-                position:absolute;
-                height:5px;
-                width:35px;
-                background-color: white;
-                border-radius: 10px;}
-                .mdl_slice::before{
-                transform:translate(0px, -10px);
-                }
-                .mdl_slice::after{                
-                transform:translate(0px, 10px);
-                }
-                .hamburger_menu:hover{
-                    position: fixed;
-                    height:50px;
-                    width:50px;
-                    /* border-color: black;
+/* burger slices*/
+.mdl_slice {
+    height: 5px;
+    width: 35px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.mdl_slice::before,
+.mdl_slice::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 35px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.mdl_slice::before {
+    transform: translate(0px, -10px);
+}
+
+.mdl_slice::after {
+    transform: translate(0px, 10px);
+}
+
+.hamburger_menu:hover {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    /* border-color: black;
                     border-style: solid;
                     border-width:2px; */
-                    display:flex;
-                    justify-content:center;
-                    align-items:center;
-                    margin-top:1vh;
-                    margin-left:95%;
-                    margin-right:2%;
-                    
-                    }
-            /* interactive button for state change */
-            .menuBtn{
-                position: fixed;
-                height:50px;
-                width:50px;
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                background-color: transparent;
-                margin-top:1vh;
-                margin-left:95%;
-                margin-right:2%;
-                cursor: pointer;
-                opacity: 0;
-            }.menuBtn:hover{
-                position: fixed;
-                height:50px;
-                width:50px;
-                border-color: black;
-                border-style: solid;
-                border-width:2px;
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                background-color: white;
-                margin-top:1vh;
-                margin-left:95%;
-                margin-right:2%;
-                cursor: pointer;
-                opacity:0.2;
-                transition: 0.5s ease-in;
-            }
-            
-            
-            /* hamburger popup nav */
-            .pop_up_nav{
-                display:grid;
-                position:fixed;
-                height:100vh;
-                width:100vw;
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                list-style: none; 
-                border-style: solid;
-                border-width: 2px;
-                border-color: black;background-repeat:no-repeat;
-                background-size: 100%;
-                background-image: url(./images/Banner.jpg);
-                z-index:-1;
-            }
-            /* .pop_up_nav .open{display:grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    margin-left: 95%;
+    margin-right: 2%;
+
+}
+
+/* interactive button for state change */
+.menuBtn {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 1vh;
+    margin-left: 95%;
+    margin-right: 2%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.menuBtn:hover {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 1vh;
+    margin-left: 95%;
+    margin-right: 2%;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: 0.5s ease-in;
+}
+
+
+/* hamburger popup nav */
+.pop_up_nav {
+    display: grid;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(./images/Banner.jpg);
+    z-index: -1;
+}
+
+/* .pop_up_nav .open{display:grid;
                 position:fixed;
                 height:100vh;
                 width:100vw;
@@ -224,184 +233,217 @@ button{
                 background-image: url(./images/Banner.jpg);
                 z-index:-1;
             } */
-                
-                .navlist2{
-                    display: flex;
-                    list-style: none;
-                    flex-direction: column;
-                    text-align: center;
-                    justify-content: center;
-                    font-size: 35px;
-                    background-color: transparent;
-                    }
-                    .navlist2 li{
-                        display: flex;
-                        width:40vw;
-                        padding:20px;
-                        background-color: transparent;
-                        color: white;
-                    align-items:center;
-                    }
-                    .navlist2 li:hover {  display: flex;
-                        
-                        background-color: transparent;
-                        color: white;
-                    align-items:center;
-                    transform:scale(1.5,1.5);
-                    transition: 0.3s ease-in;
-                    transform:translateX(-30px)
-                    }
 
-
-            
-
-
-                /* Scroll Nav */
-                .scroll_nav{
-                    position: fixed;
-                    width: 100vw;
-                    height: 35px;
-                justify-content: center;
-                background:black;
-                margin-top: 80px;
-                display:flex;
-                flex-direction: row;
-                width:100vw;    
-                align-items: center;      
-                
-                }
-                 .navList3{
-                    list-style: none;
-                    display:flex;
-                    flex-direction: row;
-                } 
-
-                .leftScroll{margin-right:32vw;}
-                .rightScroll{margin-left:30vw;}
-           
-                
- 
-                .banner_canvas{
-                    height:100vh;
-                    width:100vw;
-                    background-repeat:no-repeat;
-                    background-size: 100%;
-                    display:flex;
-                    flex-direction: column;
-                    background-image:url(./images/Banner.jpg);
-                    justify-content: center;
-                    align-items: center;
-              
-                }
-                .welcome_message{background-color:transparent;
-                    color: white;
-                }
-                .welcome_speil{background-color: transparent;
-                    color: white;
-                }
-
-                .find_out_more{ background-color: transparent;
-                    border-color: white;
-                    border-width:2px;
-                    border-style:solid ;
-                }
-                .find_out_more:hover{background-color:white;
-                    border-color: white;
-                    border-width:2px;
-                    border-style:solid;
-                transition:0.3s ease-in}
-
-
-
-
-                /* canvas1 */
-                .canvas1{
-                    display:flex;
-                  border-style: solid;
-                  border-color: white;
-                  border-width: 3px;
-                height:50vh;
-                width:100vw;
-                        background-color: orange;
-                    align-items: stretch;}
-            .canvas1Text{display: flex;
-                border-style: solid;
-                border-color: white;
-                border-width: 3px;
-                height:50vh;
-            width:35vw;
-            justify-content: center;
-            }
-            .canvas1Grid{ 
-                display:grid;
-                grid-template-columns: repeat(6, 50px);
-                margin:10px;
-                height:50vh;
-                border-style: solid;
-                border-color: white;
-                border-width: 3px;
-                width:65vw;
-            }
-                        .placeholder{
-                            border-style: solid;
-                            border-color: red;
-                            border-width: 3px;
-                            height:10vh;
-                        width:10vh;
-                    background-color: black;
-                    margin:30px;}
-
-
-
-
-
-
-
-    /* canvas2 */
-                .canvas2{display:flex;
-                height:50vh;
-            background-color: aqua;}
-            .canvas2Img{height:50vh;
-            width:25vw;
-        background-color: black;
-    margin-left:2vw;}
-    .canvas2Text{height:50vh;
-    width:75vw;
-background-color:turquoise;
-color:brown;}
-
-        
-.retard{max-width:auto;}
-
-            .contactCanvas{
-                display:flex;
-                flex-direction: column;
-                align-items: center;
-            height: 30vh;
-        }
-
-
-.footer{
+.navlist2 {
     display: flex;
-    margin-left:10vw;
-    }
+    list-style: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+    background-color: transparent;
+}
 
- .contact{
-    height:300px
-    }
+.navlist2 li {
+    display: flex;
+    width: 40vw;
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    align-items: center;
+}
 
-.siteMap{
-    height:300px;
-        }
+.navlist2 li:hover {
+    display: flex;
 
-            .socialMediaIcons{
-                display:flex;
-                height:300px;
-                position:fixed;
-                background-color: black;
-                color:black;
-            }
-
+    background-color: transparent;
+    color: white;
+    align-items: center;
+    transform: scale(1.5, 1.5);
+    transition: 0.3s ease-in;
+    transform: translateX(-30px)
+}
 
 
-                    /* css interactions setup */
+
+
+
+/* Scroll Nav */
+.scroll_nav {
+    position: fixed;
+    width: 100vw;
+    height: 35px;
+    justify-content: center;
+    background: black;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+
+}
+
+.navList3 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftScroll {
+    margin-right: 32vw;
+}
+
+.rightScroll {
+    margin-left: 30vw;
+}
+
+
+
+.banner_canvas {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/Banner.jpg);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.welcome_message {
+    background-color: transparent;
+    color: white;
+}
+
+.welcome_speil {
+    background-color: transparent;
+    color: white;
+}
+
+.find_out_more {
+    background-color: transparent;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.find_out_more:hover {
+    background-color: white;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    transition: 0.3s ease-in
+}
+
+
+
+
+/* canvas1 */
+.canvas1 {
+    display: flex;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    height: 50vh;
+    width: 100vw;
+    background-color: orange;
+    align-items: stretch;
+}
+
+.canvas1Text {
+    display: flex;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    height: 50vh;
+    width: 35vw;
+    justify-content: center;
+}
+
+.canvas1Grid {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    margin: 10px;
+    height: 50vh;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    width: 65vw;
+}
+
+.placeholder {
+    border-style: solid;
+    border-color: red;
+    border-width: 3px;
+    height: 10vh;
+    width: 10vh;
+    background-color: black;
+    margin: 30px;
+}
+
+
+
+
+
+
+
+/* canvas2 */
+.canvas2 {
+    display: flex;
+    height: 50vh;
+    background-color: aqua;
+}
+
+.canvas2Img {
+    height: 50vh;
+    width: 25vw;
+    background-color: black;
+    margin-left: 2vw;
+}
+
+.canvas2Text {
+    height: 50vh;
+    width: 75vw;
+    background-color: turquoise;
+    color: brown;
+}
+
+
+.retard {
+    max-width: auto;
+}
+
+.contactCanvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+}
+
+
+.footer {
+    display: flex;
+    margin-left: 10vw;
+}
+
+.contact {
+    height: 300px
+}
+
+.siteMap {
+    height: 300px;
+}
+
+.socialMediaIcons {
+    display: flex;
+    height: 300px;
+    position: fixed;
+    background-color: black;
+    color: black;
+}
+
+
+
+/* css interactions setup */
