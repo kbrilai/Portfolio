@@ -4,7 +4,7 @@
     padding: 0px;
 }
 
-
+*{box-sizing: border-box;}
 
 .top {
     background-color: aqua;
@@ -18,8 +18,28 @@
 
 
 .visualization {
+    display:flex;
+    flex-direction: column;
     height: 60vh;
     background-color: black;
     width: 100vw;
     color: white;
 }
+
+.story{
+    display:grid;
+    grid-template-columns: repeat(2, 50px);
+    justify-content: space-evenly;
+    height:60vh;
+background-color: green;
+}
+
+.storyImage{height:50px;
+width:50px;
+background-color: black;
+}
+
+.devJourney{height:60px;
+background-color: black;
+color:white;
+width: auto;}

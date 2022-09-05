@@ -32,3 +32,25 @@ border-color: black;
 }
 .left{display:grid;}
 .show{margin-left:4vw;}
+.workBanner{
+    height: 60vh;
+background-color: black;
+display:flex;
+}
+
+.workgrid{background-color: white;
+height: 60vh;
+width: 50vw;
+display: flex;
+}  
+  .grid{background-color: grey;
+    height: 60px;
+    width: 50px;
+    border-width: 2px;
+border-style: solid;
+border-radius: 2px;
+border-color: black;}
+.workText{background-color: aqua;
+    height: 60vh;
+    width: 50vw;;}
+
