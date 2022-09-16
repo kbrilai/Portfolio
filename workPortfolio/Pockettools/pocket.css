@@ -1,28 +1,44 @@
+body {
+    box-sizing: border-box;
+    margin: 20vh;
+}
 
-body{box-sizing: border-box;
-margin:20vh;}
 
-
-.bannerunderlay{
-    display:flex;
-    height:50vh;
-    width:80vw;
+.bannerunderlay {
+    display: flex;
+    height: 50vh;
+    width: 80vw;
     align-items: center;
     justify-content: center;
-    background-image:repeating-linear-gradient(45deg,yellow 3vw ,black 4vw);
-  
-}
-.banner{ height:45vh;
-    width:77vw;
-background-color: rgb(93, 81, 81);
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-
+    background-image: repeating-linear-gradient(45deg, yellow 3vw, black 4vw);
 
 }
 
-.return{height:80px;
+.banner {
+    height: 45vh;
+    width: 77vw;
+    background-color: rgb(93, 81, 81);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+}
+
+.return {
+    height: 80px;
     text-align: center;
+}
+
+
+
+.workGrid {
+    background-color: black;
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    color: white;
+    border-color: red;
+    border-width: 2px;
 }
