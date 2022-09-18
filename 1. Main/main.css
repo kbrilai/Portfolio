@@ -1,3 +1,15 @@
+/* Learn how to use root customs*/
+:root{
+    --main-bg-color:brown;
+    --main-text-color:;
+    --secondary-text-color:;
+    --canvas-base-color:;
+    --canvas-overlay-color:;
+    
+
+}
+
+
 /* base setup */
 * {
     color: grey;
@@ -8,96 +20,9 @@
 }
 
 
-form {
-    display: flex;
-
-}
-
-button {
-    padding: 0.5vh;
-    background-color: transparent;
-    color: white;
-    border: 2px;
-    border-style: solid;
-
-
-
-}
-
-button:hover {
-    padding: 0.5vh;
-    border-radius: 5px;
-    background-color: rgb(160, 154, 154);
-    transition: 0.5s ease-in-out;
-}
-
-/* Top banner setup */
-/* Banner base */
-.banner_top {
-
-    display: grid;
-    position: fixed;
-    grid-template-columns: 50px 25vw 500px 50px 50px;
-    grid-template-rows: 50px;
-    column-gap: 10px;
-    height: 5em;
-    width: 100vw;
-    padding: 5px 30px 5px 10px;
-    background-color: grey;
-    z-index: 1;
-
-}
-
-/* top left logo */
-.navlink,
-img {
-    height: 3.5em;
-    background-color: transparent;
-}
-
-/* search bar */
-.search_bar {
-    display: flex;
-    align-items: center;
-    background-color: rgb(207, 206, 206);
-    color: grey;
-    height: 30px;
-    width: 35vw;
-    border-radius: 10px;
-    margin: 1.5vh 0vh 0.5vh 0vh;
-    padding: 1.5vh 1vh 1vh 2vh;
-}
-
-
-/* nav bar */
-.nav_bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    height: 50px;
-    width: 800px;
-    color: grey;
-    margin: 2% 10% 10% 80%;
-    padding: 0%, 20% 0% 0%;
-}
-
-.navlist1 {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    background-color: transparent;
-    align-items: center;
-}
-
-.navitems,
-a {
-    width: 100px;
-    color: white;
-}
-
-
-
-
+.testBoard{height:100vh;
+width:100vw;
+background-color:var(--main-bg-color)}
 
 /*.Hamburger_menu */
 
@@ -284,16 +209,6 @@ a {
     flex-direction: row;
 }
 
-.leftScroll {
-    margin-right: 32vw;
-}
-
-.rightScroll {
-    margin-left: 30vw;
-}
-
-
-
 .banner_canvas {
     height: 100vh;
     width: 100vw;
@@ -347,7 +262,7 @@ a {
     align-items: stretch;
 }
 
-.canvas1Text {
+.canvas1 >.canvasText {
     display: flex;
     border-style: solid;
     border-color: white;
@@ -405,10 +320,6 @@ a {
     color: brown;
 }
 
-
-.retard {
-    max-width: auto;
-}
 
 .contactCanvas {
     display: flex;
